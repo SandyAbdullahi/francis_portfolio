@@ -1,0 +1,22 @@
+<nav class="navbar navbar-expand-sm navbar-dark fixed-top">
+  <a class="navbar-brand" [routerLink]="['/home']">FRANCIS INTERIORS</a>
+  <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId"
+      aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="collapsibleNavId">
+    <div class="nav navbar-nav ml-auto">
+      <a class="nav-item nav-link active" [routerLink]="['/home']" routerLinkActive="active" >Home </a>
+      <a class="nav-item nav-link" [routerLink]="['/services']" routerLinkActive="active">Services</a>
+      <a class="nav-item nav-link btn btn-success" [routerLink]="['/services']" routerLinkActive="active">Book a Meeting</a>
+      <a class="nav-item nav-link" [routerLink]="['/about']" routerLinkActive="active">About</a>
+      <a class="nav-item nav-link" [routerLink]="['/contact']" routerLinkActive="active">Contact</a>
+  </div>
+  </div>
+</nav>
+
+<div class="site">
+  <div class="site-content">
+    <router-outlet></router-outlet>
+  </div>
+</div>

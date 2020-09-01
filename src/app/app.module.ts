@@ -7,6 +7,9 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AboutComponent } from './components/about/about.component';
 import { ContactComponent } from './components/contact/contact.component';
 import { ServicesComponent } from './components/services/services.component';
+import { HomeComponent } from './components/home/home.component';
+import { MaterialModule } from './material.module';
+
 
 
 @NgModule({
@@ -14,12 +17,14 @@ import { ServicesComponent } from './components/services/services.component';
     AppComponent,
     AboutComponent,
     ContactComponent,
-    ServicesComponent
+    ServicesComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    MaterialModule
   ],
   providers: [],
   bootstrap: [AppComponent]
