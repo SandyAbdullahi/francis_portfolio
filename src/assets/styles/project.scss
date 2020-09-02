@@ -1,23 +1,29 @@
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
+
 .site {
   display: flex;
   flex-direction: column;
-  min-height:100vh;
+  min-height: 100vh;
 }
 
 
 .site-content {
   flex: 1;
 }
+
 .navbar {
   background: $body-bg;
+
   .navbar-brand {
     // font-family: 'Dancing Script', cursive;
     // font-style: italic;
     color: $alt-color;
-  } &:hover {
+  }
+
+  &:hover {
     color: $accent !important;
   }
+
   .active {
     color: $alt-bg !important;
   }
@@ -27,20 +33,25 @@
 .jumbotron {
   padding: 10rem 0 0 0;
   background: $body-bg;
+
   .row {
     .col-12 {
       margin-bottom: 5rem;
     }
   }
+
   h1 {
     font-weight: 900;
   }
+
   .accent {
     color: $accent;
   }
+
   .btn-alt {
     background-color: $alt-bg !important;
   }
+
   .image-container {
     background: url('src/assets/images/gian_paolo.jpg') no-repeat center;
     background-size: cover;
@@ -53,47 +64,56 @@
 .services-container {
   .row {
     margin: auto;
+
     h4 {
       color: $accent;
     }
+
     .number {
       font-size: 5rem;
       color: rgba($alt-color, 0.8);
       font-weight: 900;
     }
   }
-  .call-to-action {
-      background-color: $alt-bg;
-      height: 100%;
 
-      .row {
-        .text {
-          padding: 1rem 1rem 4rem 2rem;
-          h2 {
-            color: $accent;
-          }
-          p {
-            margin-top: 5rem;
-          }
+  .call-to-action {
+    background-color: $alt-bg;
+    height: 100%;
+
+    .row {
+      .text {
+        padding: 1rem 1rem 4rem 2rem;
+
+        h2 {
+          color: $accent;
         }
-        .image-container {
-          background: url('src/assets/images/luke-southern.jpg') no-repeat center;
-          background-size: cover;
-          height: 50vh;
+
+        p {
+          margin-top: 5rem;
         }
       }
-  .row-2 {
-    margin: 0rem 0rem 5rem auto;
-    padding-top: 3rem;
-    background-color: $body-bg;
-    .offer {
-      margin: 2rem auto;
-      i {
-        color: rgba($alt-color, 0.8);
-        margin-bottom: 4rem;
+
+      .image-container {
+        background: url('src/assets/images/luke-southern.jpg') no-repeat center;
+        background-size: cover;
+        height: 50vh;
       }
     }
-  }
+
+    .row-2 {
+      margin: 0rem 0rem 5rem auto;
+      padding-top: 3rem;
+      background-color: $body-bg;
+
+      .offer {
+        margin: 2rem auto;
+
+        i {
+          color: rgba($alt-color, 0.8);
+          margin-bottom: 4rem;
+        }
+      }
+    }
 
 
   }
@@ -110,19 +130,83 @@
     height: 20rem;
     width: 100%;
   }
+
   .text {
     padding-left: 0.3rem;
+  }
+}
+
+.service-page-container {
+  margin-top: 10rem;
+
+  .img-thumbnail {
+    border: 0.2rem solid rgba($accent, 0.6);
+  }
+
+  .container-1 {
+    margin: 10rem auto;
+
+    img {
+      margin: 2rem auto;
+    }
+
+    h1 {
+      font-size: 3rem;
+      font-weight: 900;
+    }
+
+    p {
+      width: 90%;
+
+    }
+  }
+
+  .row {
+    margin: 5rem auto;
+  }
+
+  .container-2 {
+    text-align: center;
+    img {
+      width: 70%;
+      margin: 1rem auto;
+    }
+    .img-thumbnail {
+      border: 0.2rem solid rgba($accent, 0.2);
+    }
+  }
+
+  .container-3 {
+    margin: 5rem auto 0rem auto;
+    padding: 2rem 0rem;
+    border-top: 0.2rem solid rgba($accent, 0.2);
+    text-align: center;
+    p {
+      width: 80%;
+      margin: auto;
+    }
+    .btn-alt {
+      margin: 2rem auto;
+      background-color: $alt-color;
+    }
   }
 }
 
 footer {
   background-color: $alt-bg;
   padding: 2rem 0rem;
+  a {
+    color: $accent;
+  }&:hover {
+    color: rgba($accent, 0.2);
+  }
   .social {
     i {
       color: $accent;
 
-    }:hover {
+    }
+
+    :hover {
       color: rgba($accent, 0.5);
     }
   }
@@ -133,21 +217,34 @@ footer {
   .jumbotron {
     padding: 10rem 0 0 0;
     margin-bottom: 25rem;
+
     .text {
       margin-top: 5rem;
     }
+
     h1 {
       font-size: 2.5rem;
       line-height: 1.2;
     }
 
-    .image-container{
-        top: 5rem;
-        height: 45rem;
-        position: absolute;
-        top: 4rem;
-        right: 0;
+    .image-container {
+      top: 5rem;
+      height: 45rem;
+      position: absolute;
+      top: 4rem;
+      right: 0;
 
+    }
+  }
+
+  .service-page-container {
+    .text {
+      width: 70%;
+      position: relative;
+      background: $body-bg;
+      bottom: 10rem;
+      padding: 3rem;
+      right: 0.2rem;
     }
   }
 
@@ -162,7 +259,11 @@ footer {
       line-height: 1.2;
     }
   }
+
   .projects {
+    padding: 3rem 5rem;
+    margin-bottom: 5rem;
+
     .img-thumbnail {
       height: 13rem;
     }
@@ -172,10 +273,12 @@ footer {
 @media (min-width: 1200px) {
   .jumbotron {
     margin-bottom: 20rem;
+
     .col-md-7 {
       padding: 0 3rem 0 10rem;
     }
   }
+
   .projects {
     .img-thumbnail {
       height: 17rem;
