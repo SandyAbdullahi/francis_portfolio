@@ -1,5 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
+.site {
+  display: flex;
+  flex-direction: column;
+  min-height:100vh;
+}
 
+
+.site-content {
+  flex: 1;
+}
 .navbar {
   background: $body-bg;
   .navbar-brand {
@@ -42,10 +51,16 @@
     h4 {
       color: $accent;
     }
+    .number {
+      font-size: 5rem;
+      color: rgba($alt-color, 0.8);
+      font-weight: 900;
+    }
   }
   .call-to-action {
       background-color: $alt-bg;
       height: 100%;
+
       .row {
         .text {
           padding: 1rem 1rem 4rem 2rem;
@@ -61,18 +76,37 @@
           background-size: cover;
           height: 50vh;
         }
+      }
+  .row-2 {
+    margin: 0rem 0rem 5rem auto;
+    padding-top: 3rem;
+    background-color: $body-bg;
+    .offer {
+      margin: 2rem auto;
+      i {
+        color: rgba($alt-color, 0.8);
+        margin-bottom: 4rem;
+      }
+    }
   }
-  .number {
-    font-size: 5rem;
-    color: r;
-    font-weight: 900;
-  }
+
 
   }
 }
 
 
+footer {
+  background-color: $alt-bg;
+  padding: 2rem 0rem;
+  .social {
+    i {
+      color: $accent;
 
+    }:hover {
+      color: rgba($accent, 0.5);
+    }
+  }
+}
 
 
 @media (min-width:768px) {
